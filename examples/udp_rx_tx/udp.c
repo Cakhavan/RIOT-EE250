@@ -237,7 +237,7 @@ void print_rss(msg_t *msg)
         */
 
         int32_t rss_value = hdr->RSSI - CC2538_RSSI_OFFSET;
-        printf("RSS: %4.2f \n", rss_value);
+        printf("RSS: %d \n", rss_value);.
 
         /* Tell GNRC you are done with this packet so it can release the memory */
         gnrc_pktbuf_release(pkt);
